@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+
+    <link rel="shortcut icon" href="https://blog.kakaocdn.net/dn/bc0PVi/btqQLku0ccA/m8s2MunXBGCLKrrLAbYd10/img.jpg">
+
+    <meta property="og:image" content="https://static.officeholidays.com/images/935x475c/christmas-eve-03.jpg">
+    <meta property="og:title" content="Thank you letter">
+    <meta property="og:description" content="Our memories in 2020...">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Nanum Myeongjo', serif;
+        }
+
+        body {
+            background-color: #9b070f
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+             cursor: pointer;
+
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://www.topstarnews.net/news/photo/202012/851119_579450_5528.jpg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0 auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+
+        }
+
+        h1 {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msgbox {
+            background-color: ivory;
+
+            width: 300px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0 auto;
+            }
+            
+            h1 {
+                font-size: 20px;
+            }
+
+            .envelope {
+                margin: 150px auto 0 auto;
+            }
+
+
+}
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('Wow... You are so pretty...')
+            window.location.href='https://www.youtube.com/watch?v=xtuy9Imuspc'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg"> Dear strangers </h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>Merry Christmas and Happy New Year</h1>
+
+        <div class="msgbox">
+            Cheodaboji masaeyo... <br />
+            Kisu,halfun Haetsumnida... <br />
+            P.S. Click the photo... <br />
+            <br />
+            <p class="from">
+                Sincerely, <br />
+                Heaven Seo <br />
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
